@@ -1,0 +1,123 @@
+{
+    "RowTag": "ROW",
+    "OutputMode": "single-file",
+    "OutputSeparator": " ; ",
+    "PrintLabels": true,
+    "Fields": [
+        {
+            "Tag": "FECHA",
+            "Label": "FECHA:",
+            "Format": "trim|date:yyyy/MM/dd"
+        },
+        {
+            "Tag": "CUENTA",
+            "Label": "CUENTA:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "CUENTA_NOMBRE",
+            "Label": "CUENTA_NOMBRE:",
+            "Format": "trim|upper"
+        },
+        {
+            "Tag": "SUCURSAL",
+            "Label": "SUCURSAL:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "NOM_SUCURSAL",
+            "Label": "NOM_SUCURSAL:",
+            "Format": "trim|upper"
+        },
+        {
+            "Tag": "TIPO_OPERACION",
+            "Label": "TIPO_OPERACION:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "NOMBRE_OPERACION",
+            "Label": "NOMBRE_OPERACION:",
+            "Format": "trim|upper"
+        },
+        {
+            "Tag": "NUMERO_COMPROBANTE",
+            "Label": "NUM_COMPROBANTE:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "CONSECUTIVO_MOVIMIENTO",
+            "Label": "CONSECUTIVO_MOV:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "NIT_TERCERO",
+            "Label": "NIT_TERCERO:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "NOM_TERCERO",
+            "Label": "NOM_TERCERO:",
+            "Format": "trim|upper"
+        },
+        {
+            "Tag": "TERCERO_MANTANTE",
+            "Label": "TERCERO_MANTANTE:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "NOM_TERCERO_MANDANTE",
+            "Label": "NOM_TERCERO_MANDANTE:",
+            "Format": "trim|upper"
+        },
+        {
+            "Tag": "CENTRO_COSTO",
+            "Label": "CENTRO_COSTO:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "NOM_CENTRO_COSTO",
+            "Label": "NOM_CENTRO_COSTO:",
+            "Format": "trim|upper"
+        },
+        {
+            "Tag": "AREA",
+            "Label": "AREA:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "NOM_AREA",
+            "Label": "NOM_AREA:",
+            "Format": "trim|upper"
+        },
+        {
+            "Tag": "PROYECTO",
+            "Label": "PROYECTO:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "NOM_PROYECTO",
+            "Label": "NOM_PROYECTO:",
+            "Format": "trim|upper"
+        },
+        {
+            "Tag": "DESCRIPCION",
+            "Label": "DESCRIPCION:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "DEBITO",
+            "Label": "DEBITO:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "CREDITO",
+            "Label": "CREDITO:",
+            "Format": "trim"
+        },
+        {
+            "Tag": "REFERENCIA",
+            "Label": "REFERENCIA:",
+            "Format": "trim"
+        }
+    ]
+}

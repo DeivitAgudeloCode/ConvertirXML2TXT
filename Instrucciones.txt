@@ -1,0 +1,18 @@
+1. Ingresar al programa y dirigirse al archivo llamado input.xml.
+
+2. Ingresar los registros en xml desde la etiqueta <ROW> hasta la ultima <ROW>, la equiqueta <ROWSET> no aplica
+y colapsara el archivo.
+
+3. luego usar el comando de dotnet run (-- -i input.xml -o salida.txt -m reglas.mapeo.json)-incluir en caso de que
+hayan problemas al momento de ejecutarlo el cual permite al programa leer el xml y adaptarlo al archivo en formato texto.
+
+4.En caso de querer cambiarle el nombre al archivo se hara desde el comando --o (nombre del archivo).txt.
+
+5. cada vez que se quiera hacer una modificacion se debera guardar o eliminar el archivo de salida.txt. Ya que este 
+no se autoincrementa si no que se sobreescribe.
+
+6. el programa ejecuta la funcion de a nombre de SEVEN.TODO(validar a nombre de quien corresponde el proyecto).
+
+7. en caso de querer modificar el nombre del servicio ej:tw.local.sevenTodo. se debera de escribir en el terminal junto al comando 
+(-n (nombre del servicio)), este automaticamente modificara el archivo y lo insertara de no agregar nada el valor 
+predeterminado sera sevenTodo.
