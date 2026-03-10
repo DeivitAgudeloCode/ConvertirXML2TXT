@@ -126,7 +126,8 @@ public class Program
 
         var sb = new StringBuilder();
         var nbPersonal = GetArg(args, "-n") ?? "sevenTodo"; // valor predefinido por el sistema 
-        sb.AppendLine($"tw.local.{nbPersonal}] = new tw.object. {nbPersonal} (););");
+        var nbPersonalSecun = GetArg(args, "-n") ?? "SevenTodo";
+        sb.AppendLine($"tw.local.{nbPersonal} = new tw.object.listOf.{nbPersonalSecun}();");
 
         int idx = 0;
         foreach (Match m in rowMatches)
@@ -143,7 +144,7 @@ public class Program
                 continue;
             }
 
-            sb.Append(BuildSevenTodoBlock(row, mapping, idx, nbPersonal));
+            sb.Append(BuildSevenTodoBlock(row, mapping, idx, nbPersonal, nbPersonalSecun));
             idx++;
         }
 
@@ -153,10 +154,10 @@ public class Program
     }
 
     // Convertidores a "tw.local.sevenTodo[...]"
-    static string BuildSevenTodoBlock(XElement row, MappingRules rules, int i, string nbPersonal)
+    static string BuildSevenTodoBlock(XElement row, MappingRules rules, int i, string nbPersonal, string nbPersonalSecun)
     {
         var sb = new StringBuilder();
-        sb.AppendLine($"\t\ttw.local. {nbPersonal} [ {i} ] = new tw.object.{nbPersonal}");
+        sb.AppendLine($"\t\ttw.local.{nbPersonal}[{i}] = new tw.object.{nbPersonalSecun}();");
 
         // FECHA tratada especial
         var fechaRaw = GetValue(row, "FECHA");
